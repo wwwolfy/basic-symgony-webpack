@@ -1,0 +1,13 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transform: translateX(200px);
+      -ms-transform: translateX(200px);
+          transform: translateX(200px); }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: blue; }
+
