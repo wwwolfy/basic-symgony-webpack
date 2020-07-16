@@ -10,6 +10,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, './dist'),
+        publicPath: '/',
     },
     mode: 'none',
     devServer: {
@@ -24,8 +25,11 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             esModule: false,
-                            name: '[name].[hash].[ext]',
-                            outputPath: 'dist/assets/images',
+                            name: '[name].[ext]',
+                            context: path.resolve(__dirname, "public/"),
+                            outputPath: 'images/',
+                            publicPath: './images/',
+                            useRelativePaths: true
                         },
                     },
             },

@@ -1,7 +1,10 @@
 .box {
     width: 100px;
     height: 100px;
-    background: red;
+    background: url("../../public/assets/pic1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 
     transform: translateX(200px);
 }
